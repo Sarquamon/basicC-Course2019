@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Hello",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "Hola mundo - Hello World/HolaMundo-HelloWorld.cpp",
+        "-o",
+        "Hola mundo-Hello World"
+      ],
+      // "group": {
+      //   "kind": "build",
+      //   "isDefault": true
+      // },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Hello",
+      "type": "shell",
+      "command": ".\\Hola mundo-Hello World",
+      "dependsOn": ["Build Hello"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Loops",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "Ciclos - Bucles - Loops/Ciclos-Bucles-Loops.cpp",
+        "-o",
+        "Ciclos-Bucles-Loops"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Loops",
+      "type": "shell",
+      "command": ".\\Ciclos-Bucles-Loops",
+      "dependsOn": ["Build Loops"],
+      "problemMatcher": []
+    }
+  ]
+}
