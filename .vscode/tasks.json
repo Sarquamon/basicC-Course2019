@@ -161,10 +161,10 @@
         "-o",
         "Funciones-Functions"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -172,6 +172,30 @@
       "type": "shell",
       "command": ".\\Funciones-Functions",
       "dependsOn": ["Build functions"],
+      "problemMatcher": []
+    },
+    //Clases & methods
+    {
+      "label": "Build clasesMethods",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "8. Clases - Metodos - Clases - Methods/ClasesMetodos-ClasesMethods.cpp",
+        "-o",
+        "clasesMethods"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run clasesMethods",
+      "type": "shell",
+      "command": ".\\Funciones-Functions",
+      "dependsOn": ["Build clasesMethods"],
       "problemMatcher": []
     }
   ]
