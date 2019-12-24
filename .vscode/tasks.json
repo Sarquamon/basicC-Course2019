@@ -1,6 +1,8 @@
 {
   "version": "2.0.0",
   "tasks": [
+
+    //Hello world
     {
       "label": "Build Hello",
       "type": "shell",
@@ -9,7 +11,7 @@
         "-g",
         "1. Hola mundo - Hello World/HolaMundo-HelloWorld.cpp",
         "-o",
-        "Hola mundo-Hello World"
+        "HolaMundo-HelloWorld"
       ],
       // "group": {
       //   "kind": "build",
@@ -20,10 +22,12 @@
     {
       "label": "Run Hello",
       "type": "shell",
-      "command": ".\\Hola mundo-Hello World",
+      "command": ".\\HolaMundo-HelloWorld",
       "dependsOn": ["Build Hello"],
       "problemMatcher": []
     },
+
+    //Data types
     {
       "label": "Build DataTypes",
       "type": "shell",
@@ -47,6 +51,8 @@
       "dependsOn": ["Build DataTypes"],
       "problemMatcher": []
     },
+
+    //Operators
     {
       "label": "Build Operators",
       "type": "shell",
@@ -64,6 +70,14 @@
       "problemMatcher": []
     },
     {
+      "label": "Run Operators",
+      "type": "shell",
+      "command": ".\\Operadores-Operators",
+      "dependsOn": ["Build Operators"],
+      "problemMatcher": []
+    },
+    //Conditionals
+    {
       "label": "Build Conditionals",
       "type": "shell",
       "command": "g++",
@@ -73,10 +87,10 @@
         "-o",
         "Condicionales-Conditionals"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -86,13 +100,8 @@
       "dependsOn": ["Build Loops"],
       "problemMatcher": []
     },
-    {
-      "label": "Run Operators",
-      "type": "shell",
-      "command": ".\\Operadores-Operators",
-      "dependsOn": ["Build Operators"],
-      "problemMatcher": []
-    },
+
+    //Loops
     {
       "label": "Build Loops",
       "type": "shell",
@@ -114,6 +123,31 @@
       "type": "shell",
       "command": ".\\Ciclos-Bucles-Loops",
       "dependsOn": ["Build Loops"],
+      "problemMatcher": []
+    },
+
+    //Input-Outputs
+    {
+      "label": "Build Inputs-Outputs",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "6. Entrada - Salidas -Inputs - Outputs/Entrada-Salidas-Inputs-Outputs.cpp",
+        "-o",
+        "EntradaSalidas-InputsOutputs"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Inputs-Outputs",
+      "type": "shell",
+      "command": ".\\EntradaSalidas-InputsOutputs",
+      "dependsOn": ["Build Inputs-Outputs"],
       "problemMatcher": []
     }
   ]
