@@ -6,7 +6,8 @@ using namespace std;
 class telefono
 {
 private:
-int capacidad;
+    int capacidad;
+
 public:
     string marca;
     string modelo;
@@ -27,7 +28,7 @@ public:
         disponibles = 0;
     }
 
-    telefono(string amarca, string amodelo, string apantalla, string adescripcion, int acapacidad, int aRAM)
+    telefono(string amarca, string amodelo, string apantalla, string adescripcion, int acapacidad, int aRAM, int adisponible)
     {
         marca = amarca;
         modelo = amodelo;
@@ -35,6 +36,7 @@ public:
         pantalla = apantalla;
         setCapacidad(acapacidad);
         RAM = aRAM;
+        disponibles = adisponible;
     }
 
     telefono(string amarca, string amodelo, string adescripcion, int adisponible)
@@ -45,8 +47,13 @@ public:
         disponibles = adisponible;
     }
 
-    void setCapacidad(int acapacidad){
+    void setCapacidad(int acapacidad)
+    {
         capacidad = acapacidad;
+    }
+    int getCapacidad()
+    {
+        return capacidad;
     }
 
     bool isAvailable()
@@ -67,14 +74,16 @@ int main()
     telefono tlf1("apple", "iPhone 9000", "La mejor camara del mercado", 1000);
     telefono tlf2("Samsung", "Galaxy s1++", "La mejor pantalla del mercado", 20);
     telefono tlf3("Xiaomi", "Mi note 1000", "La mejor relacion precio calidad we! xdxd", 0);
+    telefono tlf4("Xiaomi", "Generico", "1920x1080", "La mejor relacion precio calidad we! xdxd", 128, 8, 40);
 
-    if (tlf1.isAvailable())
+    if (tlf4.isAvailable())
     {
-        cout << "El " << tlf1.modelo << " esta disponible" << endl;
+        cout << "El " << tlf4.modelo << " esta disponible" << endl;
+        cout << "Su capacidad es: " << tlf4.getCapacidad() << "GB" << endl;
     }
     else
     {
-        cout << "El " << tlf1.modelo << " no esta disponible" << endl;
+        cout << "El " << tlf4.modelo << " no esta disponible" << endl;
     }
 
     // tlf1.marca = "Apple";
