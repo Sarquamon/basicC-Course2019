@@ -149,6 +149,30 @@
       "command": ".\\EntradaSalidas-InputsOutputs",
       "dependsOn": ["Build Inputs-Outputs"],
       "problemMatcher": []
+    },
+    //Functions
+    {
+      "label": "Build functions",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "6. Funciones - Functions/Funciones-Functions.cpp",
+        "-o",
+        "Funciones-Functions"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run functions",
+      "type": "shell",
+      "command": ".\\Funciones-Functions",
+      "dependsOn": ["Build functions"],
+      "problemMatcher": []
     }
   ]
 }
