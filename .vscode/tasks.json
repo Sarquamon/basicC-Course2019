@@ -59,7 +59,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "3. Operadores - Operators/Operadores-Operators.cpp",
+        "4. Operadores - Operators/Operadores-Operators.cpp",
         "-o",
         "Operadores-Operators"
       ],
@@ -83,7 +83,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "4. Condicionales - Conditionals/Condicionales-Conditionals.cpp",
+        "5. Condicionales - Conditionals/Condicionales-Conditionals.cpp",
         "-o",
         "Condicionales-Conditionals"
       ],
@@ -108,7 +108,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "5. Ciclos - Bucles - Loops/Ciclos-Bucles-Loops.cpp",
+        "6. Ciclos - Bucles - Loops/Ciclos-Bucles-Loops.cpp",
         "-o",
         "Ciclos-Bucles-Loops"
       ],
@@ -133,7 +133,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "6. Entrada - Salidas -Inputs - Outputs/Entrada-Salidas-Inputs-Outputs.cpp",
+        "7. Entrada - Salidas -Inputs - Outputs/Entrada-Salidas-Inputs-Outputs.cpp",
         "-o",
         "EntradaSalidas-InputsOutputs"
       ],
@@ -157,7 +157,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "7. Funciones - Functions/Funciones-Functions.cpp",
+        "8. Funciones - Functions/Funciones-Functions.cpp",
         "-o",
         "Funciones-Functions"
       ],
@@ -181,7 +181,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "8. Clases - Metodos - Clases - Methods/ClasesMetodos-ClasesMethods.cpp",
+        "9. Clases - Metodos - Clases - Methods/ClasesMetodos-ClasesMethods.cpp",
         "-o",
         "clasesMethods"
       ],
@@ -205,7 +205,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "9. Herencia - Inheritance/Herencia-Inheritance.cpp",
+        "10. Herencia - Inheritance/Herencia-Inheritance.cpp",
         "-o",
         "inheritance"
       ],
