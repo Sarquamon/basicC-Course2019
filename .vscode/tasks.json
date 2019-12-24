@@ -25,6 +25,29 @@
       "problemMatcher": []
     },
     {
+      "label": "Build DataTypes",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "Tipos de datos - Data Types/TiposDeDatos-DataTypes.cpp",
+        "-o",
+        "TiposDeDatos-DataTypes"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run DataTypes",
+      "type": "shell",
+      "command": ".\\Ciclos-Bucles-Loops",
+      "dependsOn": ["Build Loops"],
+      "problemMatcher": []
+    },
+    {
       "label": "Build Loops",
       "type": "shell",
       "command": "g++",
@@ -34,10 +57,10 @@
         "-o",
         "Ciclos-Bucles-Loops"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
