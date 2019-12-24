@@ -7,7 +7,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "Hola mundo - Hello World/HolaMundo-HelloWorld.cpp",
+        "1. Hola mundo - Hello World/HolaMundo-HelloWorld.cpp",
         "-o",
         "Hola mundo-Hello World"
       ],
@@ -30,9 +30,48 @@
       "command": "g++",
       "args": [
         "-g",
-        "Tipos de datos - Data Types/TiposDeDatos-DataTypes.cpp",
+        "2. Tipos de datos - Data Types/TiposDeDatos-DataTypes.cpp",
         "-o",
         "TiposDeDatos-DataTypes"
+      ],
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run DataTypes",
+      "type": "shell",
+      "command": ".\\TiposDeDatos-DataTypes",
+      "dependsOn": ["Build DataTypes"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Operators",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "3. Operadores - Operators/Operadores-Operators.cpp",
+        "-o",
+        "Operadores-Operators"
+      ],
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Conditionals",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "4. Condicionales - Conditionals/Condicionales-Conditionals.cpp",
+        "-o",
+        "Condicionales-Conditionals"
       ],
       "group": {
           "kind": "build",
@@ -41,10 +80,17 @@
       "problemMatcher": []
     },
     {
-      "label": "Run DataTypes",
+      "label": "Run Conditionals",
       "type": "shell",
       "command": ".\\Ciclos-Bucles-Loops",
       "dependsOn": ["Build Loops"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Operators",
+      "type": "shell",
+      "command": ".\\Operadores-Operators",
+      "dependsOn": ["Build Operators"],
       "problemMatcher": []
     },
     {
@@ -53,7 +99,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "Ciclos - Bucles - Loops/Ciclos-Bucles-Loops.cpp",
+        "5. Ciclos - Bucles - Loops/Ciclos-Bucles-Loops.cpp",
         "-o",
         "Ciclos-Bucles-Loops"
       ],
