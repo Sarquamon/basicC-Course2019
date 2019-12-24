@@ -61,10 +61,10 @@
         "-o",
         "VectoresMatrices-ArraysMultiDimArrays"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -242,6 +242,30 @@
       "type": "shell",
       "command": ".\\inheritance",
       "dependsOn": ["Build inheritance"],
+      "problemMatcher": []
+    },
+    //Structures
+    {
+      "label": "Build Structures",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "11. Estructuras - Structures/Estructuras-Structures.cpp",
+        "-o",
+        "Structures"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Structures",
+      "type": "shell",
+      "command": ".\\Structures",
+      "dependsOn": ["Build Structures"],
       "problemMatcher": []
     }
   ]
