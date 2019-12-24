@@ -26,7 +26,6 @@
       "dependsOn": ["Build Hello"],
       "problemMatcher": []
     },
-
     //Data types
     {
       "label": "Build DataTypes",
@@ -51,7 +50,30 @@
       "dependsOn": ["Build DataTypes"],
       "problemMatcher": []
     },
-
+    //Arrays
+    {
+      "label": "Build Arrays",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "3. Vectores - Matrices - Arrays - MultiDimArrays/VectoresMatrices-ArraysMultiDimArrays.cpp",
+        "-o",
+        "VectoresMatrices-ArraysMultiDimArrays"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Arrays",
+      "type": "shell",
+      "command": ".\\VectoresMatrices-ArraysMultiDimArrays",
+      "dependsOn": ["Build Arrays"],
+      "problemMatcher": []
+    },
     //Operators
     {
       "label": "Build Operators",
@@ -209,10 +231,10 @@
         "-o",
         "inheritance"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
