@@ -185,10 +185,10 @@
         "-o",
         "clasesMethods"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -196,6 +196,30 @@
       "type": "shell",
       "command": ".\\Funciones-Functions",
       "dependsOn": ["Build clasesMethods"],
+      "problemMatcher": []
+    },
+    //Inheritance
+    {
+      "label": "Build inheritance",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "9. Herencia - Inheritance/Herencia-Inheritance.cpp",
+        "-o",
+        "inheritance"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run inheritance",
+      "type": "shell",
+      "command": ".\\inheritance",
+      "dependsOn": ["Build inheritance"],
       "problemMatcher": []
     }
   ]
