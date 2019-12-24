@@ -137,10 +137,10 @@
         "-o",
         "EntradaSalidas-InputsOutputs"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -157,7 +157,7 @@
       "command": "g++",
       "args": [
         "-g",
-        "6. Funciones - Functions/Funciones-Functions.cpp",
+        "7. Funciones - Functions/Funciones-Functions.cpp",
         "-o",
         "Funciones-Functions"
       ],
