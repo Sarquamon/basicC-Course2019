@@ -255,10 +255,10 @@
         "-o",
         "Structures"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -266,6 +266,54 @@
       "type": "shell",
       "command": ".\\Structures",
       "dependsOn": ["Build Structures"],
+      "problemMatcher": []
+    },
+    //Pointers
+    {
+      "label": "Build Pointers",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "12. Apuntadores - Pointers/Apuntadores-Pointers.cpp",
+        "-o",
+        "Pointers"
+      ],
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Pointers",
+      "type": "shell",
+      "command": ".\\Pointers",
+      "dependsOn": ["Build Pointers"],
+      "problemMatcher": []
+    },
+    //Stacks
+    {
+      "label": "Build Stacks",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "13. Pilas - Stacks/Pilas-Stacks.cpp",
+        "-o",
+        "Stacks"
+      ],
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Stacks",
+      "type": "shell",
+      "command": ".\\Stacks",
+      "dependsOn": ["Build Stacks"],
       "problemMatcher": []
     }
   ]
