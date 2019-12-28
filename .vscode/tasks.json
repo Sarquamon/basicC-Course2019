@@ -303,10 +303,10 @@
         "-o",
         "Stacks"
       ],
-      // "group": {
-      //     "kind": "build",
-      //     "isDefault": true
-      // },
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
       "problemMatcher": []
     },
     {
@@ -327,10 +327,10 @@
         "-o",
         "Lists"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
