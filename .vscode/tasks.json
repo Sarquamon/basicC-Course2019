@@ -315,6 +315,30 @@
       "command": ".\\Stacks",
       "dependsOn": ["Build Stacks"],
       "problemMatcher": []
+    },
+    //Lists
+    {
+      "label": "Build Lists",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "14. Listas - Lists/Listas-Lists.cpp",
+        "-o",
+        "Lists"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Lists",
+      "type": "shell",
+      "command": ".\\Lists",
+      "dependsOn": ["Build Lists"],
+      "problemMatcher": []
     }
   ]
 }
