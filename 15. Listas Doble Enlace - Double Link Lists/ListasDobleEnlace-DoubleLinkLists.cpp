@@ -2,8 +2,7 @@
 
 using namespace std;
 
-typedef struct Node
-{
+typedef struct Node {
     int value;
     Node *nextNode;
     Node *prevNode;
@@ -19,8 +18,7 @@ void insertToListEnd(int val);
 void deleteListNode(int val);
 void printList();
 
-int main()
-{
+int main() {
     insertToListBeg(4);
     insertToListBeg(3);
     insertToListBeg(2);
@@ -32,64 +30,54 @@ int main()
     return 0;
 }
 
-void insertToListBeg(int val)
-{
+void insertToListBeg(int val) {
     nodePtr newNode = new Node();
     newNode->value = val;
     newNode->prevNode = NULL;
     newNode->nextNode = NULL;
-    if (headNode != NULL)
-    {
+    if (headNode != NULL) {
         newNode->nextNode = headNode;
         currentNode = headNode;
         headNode = newNode;
         tempNode = tailNode;
 
-        while (tempNode->prevNode != NULL)
-        {
-            tempNode = tempNode -> prevNode;
+        while (tempNode->prevNode != NULL) {
+            tempNode = tempNode->prevNode;
         }
-        if(tempNode != NULL){
-            tempNode -> prevNode = newNode;
+        if (tempNode != NULL) {
+            tempNode->prevNode = newNode;
             // delete(tempNode);
-        }else{
-            currentNode -> prevNode = newNode;
-            delete(currentNode);
+        } else {
+            currentNode->prevNode = newNode;
+            delete (currentNode);
         }
-    }
-    else
-    {
+    } else {
         headNode = newNode;
         tailNode = newNode;
     }
 }
 
-void insertToListEnd(int val)
-{
+void insertToListEnd(int val) {
     nodePtr newNode = new Node();
     newNode->value = val;
     newNode->nextNode = NULL;
     newNode->prevNode = NULL;
 
-    if (headNode != NULL)
-    {
+    if (headNode != NULL) {
         currentNode = tailNode;
-        while (currentNode->nextNode != NULL)
-        {
+        while (currentNode->nextNode != NULL) {
             currentNode = currentNode->nextNode;
         }
         currentNode->nextNode = newNode;
         newNode->prevNode = currentNode;
-    }
-    else
-    {
+        tailNode = newNode;
+    } else {
         headNode = newNode;
         tailNode = newNode;
     }
 }
 
-void printList()
-{
+void printList() {
     cout << "Printing! " << endl;
 
     currentNode = headNode;
@@ -97,8 +85,7 @@ void printList()
     cout << "\n Head:" << headNode << endl;
     cout << "\n Tail:" << tailNode << endl;
 
-    while (currentNode != NULL)
-    {
+    while (currentNode != NULL) {
         cout << "\nNodo: " << currentNode << endl;
         cout << "Valor: " << currentNode->value << endl;
         cout << "Siguiente: " << currentNode->nextNode << endl;
