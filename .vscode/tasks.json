@@ -303,10 +303,10 @@
         "-o",
         "Stacks"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -338,6 +338,30 @@
       "type": "shell",
       "command": ".\\Lists",
       "dependsOn": ["Build Lists"],
+      "problemMatcher": []
+    },
+    //Double-Lists
+    {
+      "label": "Build Double-Lists",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "15. Listas Doble Enlace - Double Link Lists/ListasDobleEnlace-DoubleLinkLists.cpp",
+        "-o",
+        "Double-Lists"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Double-Lists",
+      "type": "shell",
+      "command": ".\\Double-Lists",
+      "dependsOn": ["Build Double-Lists"],
       "problemMatcher": []
     }
   ]
