@@ -351,10 +351,10 @@
         "-o",
         "Double-Lists"
       ],
-      "group": {
-          "kind": "build",
-          "isDefault": true
-      },
+      // "group": {
+      //     "kind": "build",
+      //     "isDefault": true
+      // },
       "problemMatcher": []
     },
     {
@@ -362,6 +362,30 @@
       "type": "shell",
       "command": ".\\Double-Lists",
       "dependsOn": ["Build Double-Lists"],
+      "problemMatcher": []
+    },
+    //StackLists
+    {
+      "label": "Build StackLists",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "16. Pilas Listas - Stacks Lists/PilasListas-StacksLists.cpp",
+        "-o",
+        "StackLists"
+      ],
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run StackLists",
+      "type": "shell",
+      "command": ".\\StackLists",
+      "dependsOn": ["Build StackLists"],
       "problemMatcher": []
     }
   ]
