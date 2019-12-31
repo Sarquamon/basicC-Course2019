@@ -8,7 +8,7 @@ Así también suelo referirme yo a este repositorio para una buena refrescada me
 
 ## Uso
 
-Todos los códigos fueron realizados usando el editor _[vs code][1]_ (por eso las _tasks_), recomiendo su utilidad para un funcionamiento óptimo, aunque este debería de funcionar fuera de _[vs code][1]_
+Todos los códigos fueron realizados usando el editor _[vs code][1]_ (por eso las _tasks_), recomiendo su utilidad para un funcionamiento óptimo, aunque este debería de funcionar fuera de _[vs code][1]_.
 
 El orden de aprendizaje del curso está enumerado en el repositorio. Aun así acá hay una lista del orden que se debería de usar.
 
@@ -31,9 +31,16 @@ El orden de aprendizaje del curso está enumerado en el repositorio. Aun así ac
 
 Este repositorio esta abierto al público en general y el que desee usarlo como referencia también para un curso o alguna otra situación. ¡Adelante! Es completamente libre (Solo pedimos una mención de ser posible :) ).
 
+## Requerimientos
+
+1. Para la compilación y ejecución de todos estos archivos yo recomiendo utilizar los compiladores de _[MinGW][20]_ para Windows o Mac.
+    + Si necesita un video sobre como instalarlo, existen demasiados en internet. Pero yo recomiendo [este][21]; solo es necesario prestar atención a lo que se esta instalando.
+
+2. [La extension de c++ para vs code (si es aplicable)][22].
+
 ## Bugs
 
-Si usted encuentra algún bug, error o problema con alguno de los códigos; por favor haz un pull-request con la correción o si prefieres puedes hacermelo saber.
+Si usted encuentra algún bug, error o problema con alguno de los códigos; por favor haz un pull-request con la corrección o si prefieres puedes hacermelo saber.
 
 ## TO-DO
 
@@ -60,3 +67,6 @@ Si usted encuentra algún bug, error o problema con alguno de los códigos; por 
 [15]: https://github.com/Sarquamon/basicC-Course2019/tree/master/14.%20Listas%20-%20Lists
 [16]: https://github.com/Sarquamon/basicC-Course2019/tree/master/15.%20Listas%20Doble%20Enlace%20-%20Double%20Link%20Lists
 [17]: https://github.com/Sarquamon/basicC-Course2019/tree/master/16.%20Pilas%20Listas%20-%20Stacks%20Lists
+[20]: http://www.mingw.org/
+[21]: https://www.youtube.com/watch?v=z6SKatxfCOg
+[22]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
